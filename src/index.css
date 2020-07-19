@@ -1,0 +1,157 @@
+:root {
+  --bg: #b1ceee;
+  --question: #86a8cc;
+  --text: #3d3d3d;
+  --warning: #943737;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Roboto', sans-serif;
+}
+#root {
+  width: 60%;
+  margin: 100px auto auto 20%;
+  text-align: center;
+}
+h1, h2 {
+  font-family: 'Acme', sans-serif;
+}
+div {
+  font-weight: 600;
+}
+table {
+  width: 100%;
+}
+td {
+  border: 2px solid var(--text);
+  border-radius: 6px;
+  padding: 10px;
+}
+img {
+  cursor: pointer;
+}
+.warning {
+  margin-top: 10px;
+  color: var(--warning);
+  font-size: 18px;
+}
+/* LANDING-PAGE */
+.title {
+  font-size: 50px;
+}
+.landing-page table {
+  margin-top: 50px;
+}
+.landing-page td {
+  width: 50%;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* QUESTION-LIST */
+.question-manager .back {
+  height: 80px;
+}
+.question-list {
+  margin-bottom: 60px;
+}
+.remove-question {
+  height: 40px;
+  display: block;
+  float: right;
+  overflow: auto;
+}
+.question {
+  width: 80%;
+  margin: 5px auto 5px 10%;
+  text-align: left;
+  border: 2px solid var(--text);
+  border-radius: 6px;
+  padding: 5px 10px;
+  line-height: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: var(--question);
+}
+.question-manager form {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
+  padding-top: 20px;
+  border: 2px solid var(--text);
+  border-radius: 6px;
+}
+.question-manager input {
+  width: 90%;
+  padding: 5px 2px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 16px;
+}
+#form-question {
+  width: 80%;
+  text-align: center;
+}
+.answers-table td {
+  border: none;
+}
+#form-correct-answer {
+  width: 40px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 18px;
+}
+/* NAME-INPUT */
+.enter-name .back {
+  height: 80px;
+}
+.enter-name input {
+  width: 200px;
+  padding: 5px 2px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 16px;
+}
+.enter-name .name-input {
+  position: relative;
+  top: 30px;
+}
+.enter-name .name-input * {
+  vertical-align: bottom;
+}
+.enter-name .name-input input{
+  margin-bottom: 34px;
+}
+/* GAME */
+.game {
+  position: relative;
+  top: 100px;
+}
+.game-info {
+  position: relative;
+  top: -30px;
+  width: 80%;
+  margin-left: 10%;
+}
+.game .player-score {
+  float: left;
+}
+.game .current-level {
+  float: right;
+}
+.game .question {
+  text-align: center;
+}
+.game td {
+  width: 50%;
+  line-height: 50px;
+  border: 2px solid var(--text);
+  border-radius: 6px;
+  cursor: pointer;
+}
